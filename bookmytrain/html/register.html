@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Railway Book
+        </title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href=" https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="Stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../css/register.css"/>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+    
+    </head>
+    <body style="background-color: #1f2833">
+        <header class="header">
+            <nav class="navbar navbar-style">
+                <div class="container">
+                    <div class="navbar-header">
+                        <h1 id="name" >  BOOK MY TRAIN</h1> 
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <div class="row">
+                <h3 style="margin-left: 25vh;color: white;"> Individual Registration:</h3>
+            </div>
+            <div class="row text-center">
+                <hr>
+                <h5>Please enter the valid details. Garbage/Junk values may lead to deactivation</h5>
+                <hr>
+            </div>
+
+
+            <section id="register_form" class="outer-wrapper">
+                <div class="inner-wrapper">
+                    <div class="container">                
+                        <div class=" mychecform">
+                            <form role="form" id="form1">
+                                <div class="row">
+                                    <div class="form-group col-sm-4 col-sm-offset-1">
+                                        <input type="text" class="form-control text-center detailsholder"
+                                            placeholder="USERNAME" id="uname" required>
+                                    </div>
+                                    <div class="form-group col-sm-4 col-sm-offset-2">
+                                        <input type="password" class="form-control text-center detailsholder"
+                                             placeholder="PASSWORD" id="password" required>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-4 col-sm-offset-1">
+                                        <input type="password" class="form-control text-center detailsholder"
+                                            placeholder="CONFIRM PASSWORD" id="cpassword" required>
+                                    </div>
+                                    <div class="form-group col-sm-4 col-sm-offset-2">
+                                        <select name="language" class="form-control selectpicker detailsholder" id="lang" style="padding-top:7px;padding-bottom:7px;height:80%" required >
+                                            <optgroup label="Select Prefered language">
+                                                <option value="english">English</option>
+                                                <option value="hindi">Hindi</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group col-sm-4 col-sm-offset-1">
+                                        <select name="language" class=" selectpicker detailsholder text-center" id="sec_ques" style="padding-top:7px;padding-bottom:7px;height:80%" required>
+                                            <optgroup label="Select Security Question">
+                                                <option value="What is your petname?">What is your petname?</option>
+                                                <option value="Who was your childhood hero">Who was your childhood hero</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-sm-4 col-sm-offset-2">
+                                        <input type="text" class="form-control text-center detailsholder"
+                                            placeholder="SECURITY ANSWER" id="sec_ans" required>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                <hr>
+                                <h4>Personal details</h4>
+                                <hr>
+                                <div class="form-group col-sm-3 col-sm-offset-1">
+                                    <input type="text" class="form-control text-center detailsholder"
+                                        placeholder="FIRST NAME" id="f_name" required>
+                                </div>
+                                <div class="form-group col-sm-2 col-sm-offset-1 ">
+                                    <input type="text" class="form-control text-center detailsholder"
+                                        placeholder="MIDDLE NAME" id="m_name">
+                                </div>                    
+                                <div class="form-group col-sm-3 col-sm-offset-1">
+                                    <input type="text" class="form-control text-center detailsholder"
+                                        placeholder="LAST NAME" id="l_name">
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <label>*Please provide exact name as per Aadhar</label>
+                            </div>
+                            <div class="row">
+                                <div class="form-group col-sm-3 col-sm-offset-1">
+                                    <input type="date" class="form-control text-center detailsholder"
+                                        placeholder="DATE OF BIRTH" id="dob" required>
+                                </div>
+                                <div class="form-group col-sm-2 col-sm-offset-1">
+                                    <select name="gender" id="gender" class="form-control selectpicker detailsholder" style="padding-top:7px;padding-bottom:7px;height:80%" required>
+                                        <optgroup label="Gender">
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-3 col-sm-offset-1">
+                                    <select name="nationality" id="nation" class="form-control selectpicker detailsholder" style="padding-top:7px;padding-bottom:7px;height:80%" required>
+                                        <optgroup label="Nationality">
+                                        <option>India</option>
+                                        <option>Other</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                               
+                                <hr>
+                                <input type="checkbox" name="checkbox" value="check" id="agree" /> 
+                                    I have read and agree with the Terms and Conditions. and also agree to 
+                                    receive promotional emails / SMS / offers / announcements from IRCTC & 
+                                    associated partners
+                                </div>
+                                <hr>
+                                <div class="form-group col-sm-4 col-sm-offset-1">
+                                    <button id="back" formnovalidate class="form-control text-center detailsholder onclick=goback()">BACK</button>
+                                </div>
+                                <div class="form-group col-sm-4 col-sm-offset-2">
+                                    <button id="register" class="form-control text-center detailsholder" >REGISTER</button>
+                                </div>
+                                <br><br>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="container">
+                <div class="row">
+                    <br>
+                </div>
+            </div>
+        </div>
+                <script src="../javascript/register.js" type="text/javascript"></script>
+
+    </body>
+
+</html>

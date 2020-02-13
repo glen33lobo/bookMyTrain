@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>select</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			background-color: #0B0C10;
+			
+
+		}
+		#d1 
+		{
+			
+			font-size: 35px;
+			background-color: #1F2833;
+			height: 150px;
+			color: #66FCF1;
+		}
+		#d2{
+			border:1px solid #66FCF1 ;
+			border-radius: 25px;
+			margin: 15px;
+			padding: 15px;
+			line-height: 2.6;
+
+		}
+		#d3
+		{
+			border:1px solid #66FCF1 ;
+			border-radius: 25px;
+			margin: 15px;
+			padding: 15px;
+			line-height: 2.6;
+			color: #66FCF1;
+
+
+		}
+		label{
+			color: #66FCF1;
+		}
+		hr{
+			 color: #1F2833;
+		}
+		table, th, td { 
+            border:1px solid #66FCF1 ;
+            color:#66FCF1;
+            border-collapse: collapse; 
+            padding: 6px; 
+            text-align:center; 
+        } 
+        .col-50 {
+ 			 -ms-flex: 50%; /* IE10 */
+ 			 flex: 50%;
+		}
+
+
+
+		/* The Modal (background) */
+		.modal {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  padding-top: 20px; /* Location of the box */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Fu100l height */
+		  /*overflow: auto;  Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+		}
+
+		/* Modal Content */
+		.modal-content {
+		  background-color: rgba(69, 162, 158,0.5); 
+		  margin: auto;
+		  padding: 20px;
+		  border: 1px solid #888;
+		  width: 60%;
+		   /*overflow: auto;*/
+		}
+
+		/* The Close Button */
+		.close {
+		  color: #aaaaaa;
+		  float: right;
+		  margin-top: 20px;
+		  font-size: 28px;
+		  font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+		  color: #000;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+		
+
+	</style>
+</head>
+<body>
+	<div id="d1">
+
+		<h1>RAILWAY TICKET BOOKING</h1>
+	</div>
+	<div id="d2">
+	
+		<label>Name : </label>
+		<label id="name"></label>
+		<select name="type" style="background-color: #66FCF1;margin-left: 30px;">
+			<option value="sleeper">sleeper</option>
+			<option value="AC">AC</option>
+		</select>
+		<br>
+
+		<label>from : </label>
+		<input type="text" name="from"/>
+		<label style="margin-left: 30px;">to : </label>
+		<input type="text" name="to">
+
+		<br>
+
+		<label>Departure : </label>
+		<label id="Departure"> </label>
+
+		<br>
+
+		<label>Arrival : </label>
+		<label id="Arrival" > </label>
+
+		<br>
+
+		<label>Boarding Time : </label>
+		<label id="Boarding_time" > </label>
+
+		<br>
+		<hr>
+
+		<center>
+			<label style="font-style: italic;">Do you wish to take travel Insurance? :</label>
+			<button style="border-radius: 12px;;" onclick="">Yes</button>
+			<button style="border-radius: 12px;;" onclick="">No</button>
+		</center>
+		<hr>
+
+		<br>
+		<center><button id="add_p" onclick="">ADD PASSENGERS</button>
+		<br><br>
+		<table>
+			<tr>
+				<th><u>NAME</u></th>
+				<th><u>AGE</u></th>
+				<th><u>GENDER</u></th>
+				<th><u>SEAT NO</u></th>
+			</tr>
+			
+		</table>
+		</center>	
+
+		<div id="d3">
+			
+			<div class="col-50">
+            <center><h3><u>Payment:</u> </h3></center>
+            <label>Total cost is:</label>
+            <label id="cost"></label>
+            <br>
+            <center>
+            	<label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            </center>
+            
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Ex:Glen Lobo">
+         	<br><br>
+
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <br><br>
+
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+            <br><br>
+            <label for="expyear">Exp Year</label>
+            <input type="text" id="expyear" name="expyear" placeholder="2018">
+            <br><br>
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv" name="cvv" placeholder="352">
+            <br><br>
+            <center><button style="color: black;">PROCEED TO PAY</button></center>
+            
+          </div>
+
+		</div>
+		
+	</div>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+  			<!-- Modal content -->
+  			<div class="modal-content">
+    			<span class="close">&times;</span>
+    		
+    				
+    				<label>Name :</label>
+    				<input type="text" name="p_name">
+    				<br>
+    				<label>Age :</label>
+    				<input type="text" name="age">
+    				<br>
+    				<label>Gender :</label>
+    				<label><input type="radio" name="g" value="M">Male</label>
+    				<label><input type="radio" name="g" value="F">Female</label>
+    				<label><input type="radio" name="g" value="O">Others</label>
+    				<br>
+    				<div class="container">
+    					<div class="row">
+    						<div class="col-sm-7 ">
+    							
+    							<div class="coach">
+    								<img src="train_coach.png" >
+    							</div>
+    						
+    							<div class="seats">
+    								<div class="top-left-row">
+    									<img id="s_01" style="position: absolute;left: 30px;top:193px;" src="seat_grey.png" >
+    									<img id="s_02" style="position: absolute;left: 30px;top:219px;" src="seat_grey.png" >
+				    					<img id="s_03" style="position: absolute;left: 30px;top:245px;" src="seat_grey.png" >
+    									<img id="s_04" style="position: absolute;left: 30px;top:271px;" src="seat_grey.png" >
+    								</div>
+
+    								<div class="top-right-row">
+    									<img id="s_05" style="position: absolute;left: 134px;top:193px;" src="seat_grey_left.png" >
+    									<img id="s_06" style="position: absolute;left: 134px;top:219px;" src="seat_grey_left.png" >
+				    					<img id="s_07" style="position: absolute;left: 134px;top:245px;" src="seat_grey_left.png" >
+    									<img id="s_08" style="position: absolute;left: 134px;top:271px;" src="seat_grey_left.png" >
+    								</div>
+    								
+    								<div class="f1-left">
+    									<img id="s_09" style="position: absolute;left: 20px;top:313px;" src="seat_grey_up.png" >
+    									<img id="s_10" style="position: absolute;left: 45px;top:313px;" src="seat_grey_up.png" >
+    								</div>
+    								<div class="f1-right">
+    									<img id="s_11" style="position: absolute;left: 88px;top:313px;" src="seat_grey_up.png" >
+    									<img id="s_12" style="position: absolute;left: 113px;top:313px;" src="seat_grey_up.png" >
+    									<img id="s_13" style="position: absolute;left: 138px;top:313px;" src="seat_grey_up.png" >
+    								</div>
+    								<div class="f2-left">
+    									<img id="s_14" style="position: absolute;left: 20px;top:337px;" src="seat_grey_down.png" >
+    									<img id="s_15" style="position: absolute;left: 45px;top:337px;" src="seat_grey_down.png" >
+				    				</div>
+				    				<div class="f2-right">
+    									<img id="s_16" style="position: absolute;left: 88px;top:337px;" src="seat_grey_down.png" >
+    									<img id="s_17" style="position: absolute;left: 113px;top:337px;" src="seat_grey_down.png" >
+    									<img id="s_18" style="position: absolute;left: 138px;top:337px;" src="seat_grey_down.png" >
+    								</div>
+    								<div class="f3-left">
+    									<img id="s_19" style="position: absolute;left: 20px;top:385px;" src="seat_grey_up.png" >
+    									<img id="s_20" style="position: absolute;left: 45px;top:385px;" src="seat_grey_up.png" >
+    								</div>
+    								<div class="f3-right">
+    									<img id="s_21" style="position: absolute;left: 88px;top:385px;" src="seat_grey_up.png" >
+    									<img id="s_22" style="position: absolute;left: 113px;top:385px;" src="seat_grey_up.png" >
+    									<img id="s_23" style="position: absolute;left: 138px;top:385px;" src="seat_grey_up.png" >
+    								</div>
+    								<div class="f4-left">
+    									<img id="s_24" style="position: absolute;left: 20px;top:409px;" src="seat_grey_down.png" >
+    									<img id="s_25" style="position: absolute;left: 45px;top:409px;" src="seat_grey_down.png" >
+				    				</div>
+				    				<div class="f4-right">
+    									<img id="s_26" style="position: absolute;left: 88px;top:409px;" src="seat_grey_down.png" >
+    									<img id="s_27" style="position: absolute;left: 113px;top:409px;" src="seat_grey_down.png" >
+    									<img id="s_28" style="position: absolute;left: 138px;top:409px;" src="seat_grey_down.png" >
+    								</div>
+    								<div class="f4-left">
+    									<img id="s_29" style="position: absolute;left: 20px;top:467px;" src="seat_grey_up.png" >
+    									<img id="s_30" style="position: absolute;left: 45px;top:467px;" src="seat_grey_up.png" >
+    								</div>
+    								<div class="f4-right">
+    									<img id="s_31" style="position: absolute;left: 88px;top:467px;" src="seat_grey_up.png" >
+    									<img id="s_32" style="position: absolute;left: 113px;top:467px;" src="seat_grey_up.png" >
+    									<img id="s_33" style="position: absolute;left: 138px;top:467px;" src="seat_grey_up.png" >
+    								</div>
+
+
+
+    							</div>
+
+    						</div>
+    					</div>
+    				</div>
+
+    					
+    				
+    					
+
+
+    					
+
+    			
+    				</center>
+    				</div>
+    		
+  			</div>
+  			
+		</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("add_p");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+*
+{
+    font-family: 'Comic Sans MS', Times, 'Times New Roman', serif;
+    color: #66FCF1;
+    margin:0%;
+    padding:0%;
+}
+
+
+.header
+{
+    background-color: #0B0C10;
+}
+
+
+
+#name
+{
+    margin: 0.25vh;
+    padding: 1vh;
+}
+
+
+.navbar-style
+{
+    box-shadow:0 5px 10px #efefef;
+}
+
+#datepicker1
+{
+    color:black;
+}
+
+label
+{
+    font-family: 'Comic Sans MS', Times, 'Times New Roman', serif;
+    color: #66FCF1;
+}
+
+hr
+{
+    border-top: 1px solid #918c8c; 
+}
+
+select
+{
+    color: #0B0C10;
+    font-size: inherit;
+}
+
+
+#back,#register{
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0.5%;
+    padding-left: 1%;
+    border-radius: 8px;
+    color:#66FCF1;
+    background-color: #0B0C10;
+    display:inline-block;
+}
+
+.detailsholder
+{
+    border-radius: 8px;
+    padding: 3vh;
+    color: #0B0C10;
+    margin: 0%;
+    width: 100%;
+
+}

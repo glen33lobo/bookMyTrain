@@ -1,0 +1,239 @@
+*
+{
+    font-family: 'Comic Sans MS', Times, 'Times New Roman', serif;
+    color: #66FCF1;
+    margin:0%;
+    padding:0%;
+}
+
+.header
+{
+    background-color: #0B0C10;
+    box-shadow: 0 5px 10px #efefef;
+    padding-top: 15px;
+    position:fixed;
+    z-index:2;
+    width:100%;
+}
+
+/*.navbar-style*/
+/*{*/
+/*}*/
+
+.icon-bar
+{
+    background-color: #66FCF1;
+}
+
+.label-chec-time
+{
+    background-color: #C5C6C7;
+    border-radius: 25px;
+    padding: 0.5vh;
+    padding-top: 0.1vh;
+    color: #0B0C10;
+    margin: 0%;
+}
+
+
+#name
+{
+    margin: 0.25vh;
+    padding: 1vh;
+
+}
+
+li
+{
+    font-family:  serif;
+    margin: 1vh;
+    font-weight:bolder;
+    font-size: 120%;
+}
+
+.detailsholder
+{
+    border-radius: 8px;
+    padding: 3vh;
+    color: #0B0C10;
+    margin: 0%;
+    width: 100%;
+
+}
+
+.mychecform
+{
+    border: solid 2px #C5C6C7;
+    padding: 5vh;
+}
+
+
+
+.outer-wrapper { 
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+    
+.inner-wrapper {
+      display:table-cell;
+      vertical-align:middle;
+      padding:15px;
+}
+
+.sugg-section-label,.sugg-section-label-place
+{
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+
+.sugg-section-label-place
+{
+    font-size: 150%;
+}
+
+.sugg-section
+{
+    border: solid 2px #45A29E;
+    border-radius: 8px;
+    margin-top: 4vh;
+    background-color:#0B0C10;
+    /*margin-left:2vh;*/
+    /*margin-right:2vh;*/
+}
+
+
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 5px;
+    background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+text-align: center;
+margin: 24px 0 12px 0;
+position: relative;
+}
+
+img.avatar {
+width: 30%;
+height: 80%;
+border-radius: 50%;
+}
+
+span.psw {
+float: right;
+padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed*/
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+/* padding-top: 60px; */
+}
+
+/* Modal Content/Box */
+.modal-content {
+background-color: #fefefe;
+margin: 5vh auto 5vh auto; /* 5% from the top, 15% from the bottom and centered */
+border: 1px solid #888;
+width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+position: absolute;
+right: 25px;
+top: 0;
+color: #000;
+font-size: 35px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: red;
+cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 1.6s;
+animation: animatezoom 1.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+span.psw {
+display: block;
+float: none;
+}
+.cancelbtn {
+width: 100%;
+}
+}
+
+li button{
+    background-color: #0B0C10;
+    border-radius: 8px;
+    padding:1.2vh
+}
+
+li button:hover{
+    background-color: #66FCF1;
+    color: #0B0C10;
+    border-radius: 8px;
+}
+
+#loginform
+{
+    margin-top: 200px;
+
+}
+
+
+.login-form-input{
+    width: 100%;
+    padding: 8px 15px;
+    margin: 4px 0px;
+    background-color: #C5C6C7;
+    color:#0B0C10;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.login-form-button{
+    width: 100%;
+    padding: 8px 15px;
+    margin: 4px 0px;
+    color:#0B0C10;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+  background-color: rgb(32, 224, 38);
+}
